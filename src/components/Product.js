@@ -13,11 +13,10 @@ function Product({ title, image, price, rating }) {
         </p>
       </div>
       <div className="product__rating">
-        <StarIcon />
-        <StarIcon />
-        <StarIcon />
-        <StarIcon />
-        <StarIcon />
+          {Array(rating).fill().map((_ , i)=>(
+                <StarIcon />
+            ))}
+        
       </div>
 
       <img src={image} />

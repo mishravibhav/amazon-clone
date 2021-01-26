@@ -38,4 +38,5 @@
 }
 .product__rating {
   color: yellow;
+  text-align: left;
 }
