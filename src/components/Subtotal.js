@@ -5,9 +5,7 @@ import CurrencyFormat from "react-currency-format";
 function Subtotal() {
   return (
     <div className="subtotal">
-      <CurrencyFormat>
-        renderText=
-        {(value) => (
+      <CurrencyFormat renderText={(value) => (
           <>
             <p>
               subtotal( 0 items)
@@ -20,11 +18,11 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value=0
-        {/* value={getBasketTotal(basket)} */}
-        displayType={"Text"}
-        {/* thousandSeperator = {true} */}
+        value={0}
+        displayType={"text"}
+        thousandSeperator = {true}
         prefix={"₹"}
+        >
       </CurrencyFormat>
     </div>
   );
